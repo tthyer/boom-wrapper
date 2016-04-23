@@ -1,0 +1,33 @@
+{
+  "name": "boom-wrapper",
+  "version": "0.0.1",
+  "description": "wrapper for Boom errors, exposes obscured data",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tthyer/boom-wrapper.git"
+  },
+  "homepage": "",
+  "author": {
+    "name": "T. Thyer",
+    "email": "tmthyer@gmail.com",
+    "url": ""
+  },
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "scripts": {
+    "test": "tape 'test/*.js' | tap-spec",
+    "coverage": "./node_modules/istanbul/lib/cli.js cover ./node_modules/tape/bin/tape './test/*.js'"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [],
+  "dependencies": {
+    "boom": "^3.1.2"
+  },
+  "devDependencies": {
+    "tape": "^4.4.0"
+  }
+}
